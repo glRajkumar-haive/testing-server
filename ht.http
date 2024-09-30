@@ -1,0 +1,8 @@
+@host = http://localhost:3200/test
+
+### GET
+GET {{host}}/hi
+
+
+### POST
+POST {{host}}/hi
