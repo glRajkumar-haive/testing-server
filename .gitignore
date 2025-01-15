@@ -28,3 +28,5 @@ pnpm-lock.yaml
 *.tsbuildinfo
 tailwind-output.css
 /a
+
+.env
