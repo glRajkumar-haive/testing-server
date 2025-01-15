@@ -4,7 +4,7 @@ import { logger } from 'hono/logger';
 import { cors } from 'hono/cors';
 import { Hono } from 'hono';
 import 'dotenv/config';
-import { getOnlineContent, getUrlMetadata } from './general';
+import { getOnlineContent, getUrlMetadata } from './general.js';
 
 const app = new Hono().basePath("api")
 
