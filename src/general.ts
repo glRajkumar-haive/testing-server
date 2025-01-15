@@ -46,7 +46,7 @@ export async function getUrlMetadata(c: Context) {
 
   const { result, error } = await ogs({
     url: decoded,
-    timeout: 5000,
+    timeout: 10000,
   })
 
   if (error || !result.ogTitle) {
