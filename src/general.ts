@@ -43,7 +43,7 @@ export async function getUrlMetadata(c: Context) {
   if (!url) return c.json({ error: 'No URL provided' }, 400)
 
   const decoded = decodeURIComponent(url)
-  const { result, error } = await ogs({ url: decoded })
+  const { result, error } = await ogs({ url: decoded, timeout: 5000 })
 
   if (error) return c.json({})
 
